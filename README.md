@@ -29,11 +29,22 @@ void set_right_node(Node* right_node)
 ## AVLTree ADT
 Member Variable
 ```cpp
-
+Node* root_;
+int size_;
 ```
 Member Function
 ```cpp
-
+AVLTree()
+~AVLTree()
+int Find(int key) const
+int Insert(int key)
+int Empty() const
+int Size() const
+int GetDepth(Node* node) const
+Node* GetSuccessor(Node* node) const
+Node* FindNode(Node* node, int key) const
+Node* FindNode(int key) const
+void Clear(Node* node)
 ```
 ---
 ## AVLSet ADT
