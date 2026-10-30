@@ -36,14 +36,14 @@ Member Function
 ```cpp
 AVLTree()
 ~AVLTree()
-int Find(int key) const
-int Insert(int key)
-int Empty() const
-int Size() const
-int GetDepth(Node* node) const
-Node* GetSuccessor(Node* node) const
 Node* FindNode(Node* node, int key) const
 Node* FindNode(int key) const
+Node* InsertNode(int key)
+bool Empty() const
+int Size() const
+int GetDepth(Node* node) const
+void RemoveNode(Node* node)
+Node* GetSuccessor(Node* node) const
 void Clear(Node* node)
 ```
 ---

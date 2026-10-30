@@ -32,18 +32,18 @@
 class AVLTree {
  public:
   AVLTree();
-
   ~AVLTree();
-  int Find(int key) const;      
-  int Insert(int key);     
-  int Empty() const;       
+
+  Node* FindNode(Node* node, int key) const; 
+  Node* FindNode(int key) const; 
+  Node* InsertNode(int key);     
+  bool Empty() const;       
   int Size() const;
+  int GetDepth(Node* node) const;
+  void RemoveNode(Node* node);
 
  private:
-  int GetDepth(Node* node) const;
   Node* GetSuccessor(Node* node) const;       
-  Node* FindNode(Node* node, int key) const; // 특정 서브트리부터 탐색
-  Node* FindNode(int key) const; // root부터 탐색 
   void Clear(Node* node);
 
   Node* root_;
